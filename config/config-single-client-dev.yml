@@ -1,1 +1,14 @@
-world: 898898
+server:
+  port: 3302
+
+spring:
+  application:
+    name: config-single-server-client  # 应用名称
+
+#eureka 配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
